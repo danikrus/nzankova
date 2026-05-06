@@ -505,9 +505,19 @@
             gap: 24px;
         }
 
+        .hero-mobile-img { display: none; }
+
         @media (max-width: 900px) {
-            .hero .container { flex-direction: column; background: var(--surface-soft); min-height: auto; border-radius: 0; border-left: 0; border-right: 0; box-shadow: none; }
+            .hero .container { flex-direction: column; background: var(--surface-soft); min-height: auto; border-radius: 0; border-left: 0; border-right: 0; box-shadow: none; padding: 0; }
             .hero .container::before { display: none; }
+            .hero-mobile-img {
+                display: block;
+                width: 100%;
+                height: 300px;
+                background: url('hero-new.jpg') no-repeat center center;
+                background-size: cover;
+                order: 1;
+            }
             .hero-content { padding: 30px 20px; max-width: 100%; order: 2; }
             .hero h1 { font-size: 2.2rem; }
             .form-row { grid-template-columns: 1fr; }
@@ -529,6 +539,7 @@
 
 <div class="hero">
     <div class="container">
+        <div class="hero-mobile-img"></div>
         <div class="hero-content">
             <div class="badge">Бесплатный вебинар</div>
             <h1>Английский для путешествий:<br><span>От аэропорта до отеля</span></h1>
