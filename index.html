@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вебинар: Английский для путешествий</title>
+    <title>Английский для путешествий | Вебинар Натальи Заньковой</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+    
+    <!-- Meta tags for SEO & Social sharing -->
+    <meta name="description" content="Бесплатный вебинар о том, как перестать бояться языкового барьера и начать говорить в поездках за 90 минут.">
+    <meta property="og:title" content="Английский для путешествий: От аэропорта до отеля">
+    <meta property="og:description" content="Запишитесь на бесплатный вебинар Натальи Заньковой.">
+    <meta property="og:image" content="hero-new.jpg">
+    <meta property="og:type" content="website">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -175,7 +186,6 @@
             transform: translateY(-1px);
         }
 
-        /* Section Headings */
         .section-title {
             text-align: center;
             font-size: 2.2rem;
@@ -184,7 +194,6 @@
             font-weight: 700;
         }
 
-        /* Program Timeline */
         .program-timeline {
             position: relative;
             max-width: 850px;
@@ -249,7 +258,6 @@
             margin-bottom: 5px;
         }
 
-        /* Features Section */
         .features {
             background: 
                 linear-gradient(135deg, rgba(0,86,210,0.08), rgba(0,86,210,0.08)),
@@ -299,7 +307,6 @@
             font-weight: 700;
         }
 
-        /* Speaker Section */
         .speaker {
             margin-top: 56px;
         }
@@ -363,7 +370,6 @@
             flex-shrink: 0;
         }
 
-        /* Registration Form */
         .reg-section {
             padding: 0 0 64px;
             text-align: center;
@@ -475,7 +481,16 @@
             text-decoration: none;
         }
 
-        /* Footer */
+        #form-success {
+            display: none;
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--white);
+            border: 1px solid var(--line-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+        }
+
         footer {
             background-color: #121c33;
             color: rgba(255, 255, 255, 0.7);
@@ -490,7 +505,6 @@
             gap: 24px;
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             .hero .container { flex-direction: column; background: var(--surface-soft); min-height: auto; border-radius: 0; border-left: 0; border-right: 0; box-shadow: none; }
             .hero .container::before { display: none; }
@@ -501,7 +515,6 @@
             .features { padding: 30px 20px; border-radius: 0; margin: 40px -20px 0; }
             .features-grid { grid-template-columns: 1fr; }
             .footer-content { flex-direction: column; align-items: flex-start; }
-            
             .program-timeline::before { left: 40px; }
             .program-item { grid-template-columns: auto 1fr; text-align: left; gap: 20px; }
             .program-time { text-align: left; grid-row: 1; grid-column: 2; font-size: 1rem; }
@@ -512,34 +525,25 @@
 </head>
 <body>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
 <div class="hero">
     <div class="container">
         <div class="hero-content">
             <div class="badge">Бесплатный вебинар</div>
             <h1>Английский для путешествий:<br><span>От аэропорта до отеля</span></h1>
             <p>Бесплатный вебинар о том, как перестать бояться языкового барьера и начать говорить в поездках за 90 минут.</p>
-            
             <div class="hero-meta">
                 <div class="meta-item">
-                    <div class="meta-icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    </div>
-                    30 мая 2026
+                    <div class="meta-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>30 мая 2026
                 </div>
                 <div class="meta-item">
-                    <div class="meta-icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    13:00 (МСК)
+                    <div class="meta-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>13:00 (МСК)
                 </div>
                 <div class="meta-item">
-                    <div class="meta-icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
-                    Онлайн-трансляция
+                    <div class="meta-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>Онлайн-трансляция
                 </div>
             </div>
-
             <a href="#register" class="btn-main">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polyline points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 Записаться бесплатно
@@ -550,50 +554,26 @@
 
 <div class="container">
     <h2 class="section-title">Программа вебинара</h2>
-    
     <div class="program-timeline">
         <div class="program-item">
             <div class="program-time">13:00</div>
-            <div class="program-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
-            </div>
-            <div class="program-content">
-                <h4>Зачем нужен английский в путешествиях</h4>
-                <p>Реальные истории о том, как знание языка спасало бюджет и делало поездку в 10 раз интереснее.</p>
-            </div>
+            <div class="program-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div>
+            <div class="program-content"><h4>Зачем нужен английский в путешествиях</h4><p>Реальные истории о том, как знание языка спасало бюджет и делало поездку в 10 раз интереснее.</p></div>
         </div>
-
         <div class="program-item">
             <div class="program-time">13:15</div>
-            <div class="program-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
-            <div class="program-content">
-                <h4>Методы изучения английского</h4>
-                <p>Как выучить базу за 2 недели: обзор самых эффективных техник запоминания фраз.</p>
-            </div>
+            <div class="program-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <div class="program-content"><h4>Методы изучения английского</h4><p>Как выучить базу за 2 недели: обзор самых эффективных техник запоминания фраз.</p></div>
         </div>
-
         <div class="program-item">
             <div class="program-time">13:35</div>
-            <div class="program-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="program-content">
-                <h4>Топ-50 фраз "выживания"</h4>
-                <p>Универсальные конструкции, которые поймут в любой точке мира: от Токио до Рио.</p>
-            </div>
+            <div class="program-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="program-content"><h4>Топ-50 фраз "выживания"</h4><p>Универсальные конструкции, которые поймут в любой точке мира: от Токио до Рио.</p></div>
         </div>
-
         <div class="program-item">
             <div class="program-time">14:00</div>
-            <div class="program-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1 0-4.88 2.5 2.5 0 0 1 0-4.88A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 0-4.88 2.5 2.5 0 0 0 0-4.88A2.5 2.5 0 0 0 14.5 2z"/></svg>
-            </div>
-            <div class="program-content">
-                <h4>Психология страха: Как заговорить первым</h4>
-                <p>Упражнения для преодоления языкового барьера и страха совершить ошибку.</p>
-            </div>
+            <div class="program-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1 0-4.88 2.5 2.5 0 0 1 0-4.88A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 0-4.88 2.5 2.5 0 0 0 0-4.88A2.5 2.5 0 0 0 14.5 2z"/></svg></div>
+            <div class="program-content"><h4>Психология страха: Как заговорить первым</h4><p>Упражнения для преодоления языкового барьера и страха совершить ошибку.</p></div>
         </div>
     </div>
 </div>
@@ -602,34 +582,10 @@
     <section class="features">
         <h2 class="section-title">Что вы узнаете на вебинаре</h2>
         <div class="features-grid">
-            <div class="feature-card">
-                <img src="airport.jpg" alt="В аэропорту">
-                <div class="feature-info">
-                    <h3>В аэропорту</h3>
-                    <p>Ключевые фразы для прохождения таможни, поиска багажа и регистрации на рейс без стресса.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <img src="restaurant.jpg" alt="В ресторане">
-                <div class="feature-info">
-                    <h3>В ресторане</h3>
-                    <p>Как забронировать столик, разобраться в меню и попросить счет (или пожаловаться на холодный суп).</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <img src="city.jpg" alt="В городе">
-                <div class="feature-info">
-                    <h3>В городе</h3>
-                    <p>Как спросить дорогу, купить билеты на транспорт и не заблудиться в незнакомом месте.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <img src="taxi.jpg" alt="В такси">
-                <div class="feature-info">
-                    <h3>В такси</h3>
-                    <p>Как заказать машину через приложение или на улице, объяснить конечный адрес и уточнить стоимость поездки.</p>
-                </div>
-            </div>
+            <div class="feature-card"><img src="airport.jpg" alt="В аэропорту"><div class="feature-info"><h3>В аэропорту</h3><p>Ключевые фразы для прохождения таможни и регистрации на рейс без стресса.</p></div></div>
+            <div class="feature-card"><img src="restaurant.jpg" alt="В ресторане"><div class="feature-info"><h3>В ресторане</h3><p>Как забронировать столик, разобраться в меню и попросить счет.</p></div></div>
+            <div class="feature-card"><img src="city.jpg" alt="В городе"><div class="feature-info"><h3>В городе</h3><p>Как спросить дорогу, купить билеты на транспорт и не заблудиться.</p></div></div>
+            <div class="feature-card"><img src="taxi.jpg" alt="В такси"><div class="feature-info"><h3>В такси</h3><p>Как заказать машину, объяснить адрес и уточнить стоимость поездки.</p></div></div>
         </div>
     </section>
 </div>
@@ -641,20 +597,10 @@
             <div class="speaker-info">
                 <p style="color: var(--text-grey); font-weight: 500; margin-bottom: 5px;">Ваш спикер</p>
                 <h3>Наталья Занькова</h3>
-                <p>Эксперт по разговорному английскому и активный путешественник. Наталья специализируется на методиках быстрого преодоления языкового барьера.</p>
+                <p>Эксперт по разговорному английскому. Наталья помогает ученикам чувствовать себя уверенно в любой стране мира.</p>
                 <ul class="speaker-list">
-                    <li>
-                        <div class="check-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        </div>
-                        Основатель онлайн-школы практического английского
-                    </li>
-                    <li>
-                        <div class="check-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        </div>
-                        Более 500 успешных учеников по всему миру
-                    </li>
+                    <li><div class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Основатель онлайн-школы практического английского</li>
+                    <li><div class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Более 500 успешных учеников по всему миру</li>
                 </ul>
             </div>
         </div>
@@ -666,45 +612,25 @@
         <h2 class="section-title">Забронируйте место прямо сейчас</h2>
         <div class="reg-form">
             <div class="reg-form-wrapper">
-                <form id="registration-form" method="POST" action="https://hook.eu2.make.com/4i2yb93s5728m3o3ouogkhrtoi7zedce">
+                <form id="registration-form" method="POST" action="https://hook.eu2.make.com/4i2yb93s5728m3o3ouogkhrtoi7zedce" target="hidden_iframe">
                     <div class="form-row">
                         <div class="input-group">
-                            <div class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                            </div>
-                            <div class="input-fields">
-                                <label>Ваше имя</label>
-                                <input type="text" name="name" placeholder="Введите ваше имя" required>
-                            </div>
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                            <div class="input-fields"><label>Ваше имя</label><input type="text" name="name" placeholder="Введите ваше имя" required></div>
                         </div>
                         <div class="input-group">
-                            <div class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div class="input-fields">
-                                <label>Ваш телефон</label>
-                                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-                            </div>
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                            <div class="input-fields"><label>Ваш телефон</label><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
                         </div>
                         <div class="input-group">
-                            <div class="input-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                            </div>
-                            <div class="input-fields">
-                                <label>Ваш Email</label>
-                                <input type="email" name="email" placeholder="example@mail.com" required>
-                            </div>
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                            <div class="input-fields"><label>Ваш Email</label><input type="email" name="email" placeholder="example@mail.com" required></div>
                         </div>
                     </div>
-                    <button type="submit" class="btn-submit">
-                        Получить ссылку на вебинар
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polyline points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                    </button>
+                    <button type="submit" class="btn-submit">Получить ссылку на вебинар</button>
                 </form>
                 <div id="form-success" style="display:none; text-align:center; padding: 60px 20px; background: var(--white); border: 1px solid var(--line-color); border-radius: 12px; box-shadow: var(--shadow-soft);">
-                    <div style="width: 64px; height: 64px; background: var(--badge-bg); color: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
+                    <div style="width: 64px; height: 64px; background: var(--badge-bg); color: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
                     <h3 style="color: var(--dark-blue); font-size: 1.8rem; margin-bottom: 12px; font-weight: 800;">Место забронировано!</h3>
                     <p style="color: var(--text-grey); font-size: 1.1rem; max-width: 400px; margin: 0 auto;">Мы отправили подтверждение на вашу почту. Ссылка на трансляцию придет за 15 минут до начала.</p>
                 </div>
@@ -714,62 +640,26 @@
     </div>
 </section>
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <p>&copy; 2026 - Все права защищены.</p>
-            <p>Специально для вебинара Натальи Заньковой (30 мая 2026).</p>
-        </div>
-    </div>
-</footer>
+<footer><div class="container"><div class="footer-content"><p>&copy; 2026 - Все права защищены.</p><p>Специально для вебинара Натальи Заньковой (30 мая 2026).</p></div></div></footer>
 
 <script>
-    // Плавная прокрутка
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+            if (target) { target.scrollIntoView({ behavior: 'smooth' }); }
         });
     });
 
-    // Обработка формы (Make.com Webhook)
-    const form = document.getElementById('registration-form');
-    if (form) {
-        form.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            const btn = form.querySelector('.btn-submit');
-            const originalBtnText = btn.innerHTML;
-            
-            btn.disabled = true;
-            btn.innerHTML = 'Отправка...';
-            
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-            
-            try {
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                });
-                
-                if (response.ok) {
-                    form.style.display = 'none';
-                    document.getElementById('form-success').style.display = 'block';
-                } else {
-                    throw new Error('Server returned ' + response.status);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.');
-                btn.disabled = false;
-                btn.innerHTML = originalBtnText;
-            }
+    const regForm = document.getElementById('registration-form');
+    const successBlock = document.getElementById('form-success');
+    if (regForm) {
+        regForm.addEventListener('submit', function() {
+            setTimeout(() => {
+                regForm.style.display = 'none';
+                successBlock.style.display = 'block';
+                successBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 150);
         });
     }
 </script>
