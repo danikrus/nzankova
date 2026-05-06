@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Английский для путешествий — Интеграция с Make.com",
+  "entry": "webinar-landing-webhook.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-05-06T17:00:10.890Z",
+  "updatedAt": "2026-05-06T17:00:10.917Z",
+  "sourceSkillId": "blog-post",
+  "metadata": {
+    "identifier": "webinar-landing-webhook",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}

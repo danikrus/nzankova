@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Английский для путешествий — Точная копия",
+  "entry": "webinar-landing-copy.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-05-06T16:50:39.871Z",
+  "updatedAt": "2026-05-06T16:50:39.893Z",
+  "sourceSkillId": "blog-post",
+  "metadata": {
+    "identifier": "webinar-landing-copy",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}
