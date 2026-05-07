@@ -1,0 +1,6 @@
+# Ignore service files and folders
+.od-skills/
+*.artifact.json
+email-template-2.html
+index-2.html
+webinar-landing-webhook*.html
