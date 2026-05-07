@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Английский для путешествий — Финальная версия",
+  "entry": "webinar-landing-webhook-final.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-05-06T17:16:11.415Z",
+  "updatedAt": "2026-05-06T17:16:11.447Z",
+  "sourceSkillId": "blog-post",
+  "metadata": {
+    "identifier": "webinar-landing-webhook-final",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}

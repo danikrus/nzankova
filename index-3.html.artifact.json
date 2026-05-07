@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Английский для путешествий — Финальная версия (на GitHub)",
+  "entry": "index-3.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-05-06T18:16:09.998Z",
+  "updatedAt": "2026-05-06T18:16:10.035Z",
+  "sourceSkillId": "blog-post",
+  "metadata": {
+    "identifier": "index",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}
